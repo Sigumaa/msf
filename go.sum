@@ -1,2 +1,4 @@
+github.com/Sigumaa/lfu v0.0.0-20230301133749-61af73d6156f h1:BXt3w7aL9m0OVuCofVO5QXlv2SZ/86EGgsmIgMA7rY8=
+github.com/Sigumaa/lfu v0.0.0-20230301133749-61af73d6156f/go.mod h1:JUYg1UWBvk9m0Mh2LML8aa+b+tyac026CsWHctOSz+w=
 github.com/joho/godotenv v1.5.1 h1:7eLL/+HRGLY0ldzfGMeQkb7vMd0as4CfYvUVzLqw0N0=
 github.com/joho/godotenv v1.5.1/go.mod h1:f4LDr5Voq0i2e/R5DDNOoa2zzDfwtkZa6DnEwAbqwq4=
