@@ -18,7 +18,7 @@ func main() {
 		log.Fatal(err)
 	}
 
-	client := lfu.New(key, username)
+	client := lfu.New(username, key)
 
 	// Get Friends List
 	friends, err := client.Friends(context.TODO())
