@@ -1,10 +1,13 @@
 package main
 
 import (
+	"context"
 	"errors"
+	"fmt"
 	"log"
 	"os"
 
+	"github.com/Sigumaa/lfu"
 	"github.com/joho/godotenv"
 )
 
@@ -13,7 +16,13 @@ func main() {
 	if err != nil {
 		log.Fatal(err)
 	}
+	client := lfu.New(username, key)
 
+	nowPlaying, err := client.NowPlayingTrack(context.TODO())
+	if err != nil {
+		log.Fatal(err)
+	}
+	fmt.Printf("Now playing: %s - %s", nowPlaying.Name, nowPlaying.ArtistName())
 }
 
 func loadConfig() (string, string, error) {
